@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import { Route, Router, Switch } from 'react-router';
+import React, { PureComponent } from 'react';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/sections/Navbar'; 
 import HomePage from './components/HomePage';
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
+import GalleryPage from "./components/GalleryPage";
 import Footer from "./components/sections/Footer";
 
-class App extends Component {
+class App extends PureComponent {
   constructor() {
     super();
     this.state = {};
